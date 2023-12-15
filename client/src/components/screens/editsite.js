@@ -24,7 +24,7 @@ const EditSite = ()=>{
     useEffect(()=>{
     // const getPost = ()=>{
         // loadDataOnlyOnce();
-        fetch(`http://localhost:5000/editPost/${postId}`,{
+        fetch(`https://webhub-backend.onrender.com/editPost/${postId}`,{
             method : "get",
             headers : {
                 "Authorization" : "Bearer " + localStorage.getItem("jwt")

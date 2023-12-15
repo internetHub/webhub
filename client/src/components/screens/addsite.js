@@ -18,7 +18,7 @@ const AddSite = ()=>{
 
     const postDetails = ()=>{
         
-        fetch("http://localhost:5000/addContribution",{
+        fetch("https://webhub-backend.onrender.com/addContribution",{
             method : "post",
             headers : {
                 "Authorization" : "Bearer " + localStorage.getItem("jwt"),

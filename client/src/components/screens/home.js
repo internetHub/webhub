@@ -33,7 +33,7 @@ const Home = ()=>{
 
     useEffect(()=>{
 
-        fetch('http://localhost:5000/allpost', {
+        fetch('https://webhub-backend.onrender.com/allpost', {
             headers:{
                 "Authorization":"Bearer " + localStorage.getItem("jwt")
             }
@@ -50,7 +50,7 @@ const Home = ()=>{
 
         // console.log(postId);
 
-        fetch("http://localhost:5000/increaseCount",{
+        fetch("https://webhub-backend.onrender.com/increaseCount",{
             method : "put",
             headers : {
                 "Authorization" : "Bearer " + localStorage.getItem("jwt"),
