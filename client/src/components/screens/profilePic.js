@@ -25,7 +25,7 @@ const Profile_pic = () => {
 
     useEffect(() => {
         if(url){
-            fetch("http://localhost:5000/profile/profilePic",{
+            fetch("https://webhub-backend.onrender.com/profile/profilePic",{
                 method : "post",
                 headers : {
                     "Content-Type" : "application/json",

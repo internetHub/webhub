@@ -16,7 +16,7 @@ const Profile = ()=>{
 
     useEffect(()=>{
 
-        fetch("http://localhost:5000/mypost",{
+        fetch("https://webhub-backend.onrender.com/mypost",{
             headers : {
                 "Authorization" : "Bearer " + localStorage.getItem("jwt")
             },
@@ -41,7 +41,7 @@ const Profile = ()=>{
     const deletePost = (postid)=>{
 
         if(window.confirm("Are you sure to delete this post ??")){
-            fetch(`http://localhost:5000/deletepost/${postid}`, {
+            fetch(`https://webhub-backend.onrender.com/deletepost/${postid}`, {
                 mode: 'no-cors',
                 method : "delete",
                 headers:{

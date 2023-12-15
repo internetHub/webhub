@@ -26,7 +26,7 @@ const Signup = () => {
             M.toast({html: "Invalid UserName", classes:"#c62828 red darken-3"})
         }
         else{
-            fetch("http://localhost:5000/signup",{
+            fetch("https://webhub-backend.onrender.com/signup",{
                 method : "post",
                 // mode: "cors",
                 headers : {

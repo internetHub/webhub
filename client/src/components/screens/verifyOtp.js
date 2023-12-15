@@ -26,7 +26,7 @@ const   VerifyOtp = () => {
     
 
     const verifyOTP = () =>{
-        fetch("http://localhost:5000/verify",{
+        fetch("https://webhub-backend.onrender.com/verify",{
             method : "post",
             headers : {
                 "Content-Type" : "application/json",

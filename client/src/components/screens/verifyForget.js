@@ -13,7 +13,7 @@ const   ForgetPasswordOtp = () => {
     const email = localStorage.getItem("email");
 
     const verifyForgetOTP = (e) =>{
-        fetch("http://localhost:5000/verifyForgettenPassword",{
+        fetch("https://webhub-backend.onrender.com/verifyForgettenPassword",{
             method : "post",
             headers : {
                 "Content-Type" : "application/json",

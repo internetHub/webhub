@@ -13,7 +13,7 @@ const   ForgetPassword = () => {
     localStorage.setItem("email", email);
 
     const sendOTP = (e) =>{
-        fetch("http://localhost:5000/forgettenPassword",{
+        fetch("https://webhub-backend.onrender.com/forgettenPassword",{
             method : "post",
             headers : {
                 "Content-Type" : "application/json",

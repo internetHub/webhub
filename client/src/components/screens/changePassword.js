@@ -13,7 +13,7 @@ const   ChangePassword = () => {
     const email = localStorage.getItem("email");
 
     const changePassword = (e) =>{
-        fetch("http://localhost:5000/changePassword",{
+        fetch("https://webhub-backend.onrender.com/changePassword",{
             method : "post",
             headers : {
                 "Content-Type" : "application/json",
